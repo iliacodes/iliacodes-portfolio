@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const handleMouseOver = (event: MouseEvent) => {
       let iteration = 0;
-      const originalText = (event.target as HTMLElement).dataset.value;
+      const originalText = (event.target as HTMLElement).dataset.value as string;
 
       let interval = setInterval(() => {
         (event.target as HTMLElement).innerText = originalText
