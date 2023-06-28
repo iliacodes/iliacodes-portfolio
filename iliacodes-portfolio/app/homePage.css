@@ -1,0 +1,15 @@
+.matrix-text {
+  height: 1px;
+  background: #020;
+  margin-top: 3px;
+  text-shadow: 0.5px 0px 3px #0F0, 
+  -0.5px 0px 1px #0F0;
+  pointer-events: none;
+}
+
+.scanline {
+  height: 1px;
+  background: #020;
+  margin-top: 3px;
+  pointer-events: none;
+}
