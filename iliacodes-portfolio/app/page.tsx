@@ -9,23 +9,20 @@ import { motion } from 'framer-motion';
 
 
 export default function Home() {
-  const [text, setText] = useState(generateRandomString(12));
 
   useEffect(() => {
-    const handleMouseOver = (event) => {
+    const handleMouseOver = (event: MouseEvent) => {
       let iteration = 0;
-      const originalText = event.target.dataset.value;
-    
-      clearInterval(interval);
-    
-      const interval = setInterval(() => {
-        event.target.innerText = originalText
+      const originalText = (event.target as HTMLElement).dataset.value;
+
+      let interval = setInterval(() => {
+        (event.target as HTMLElement).innerText = originalText
           .split("")
           .map((letter, index) => {
             if (index < iteration) {
               return originalText[index];
             }
-    
+
             return letters[Math.floor(Math.random() * 26)];
           })
           .join("");
@@ -37,7 +34,6 @@ export default function Home() {
         iteration += 1 / 5;
       }, 30);
     };
-
 
     const h1Elements = document.querySelectorAll('h1');
     h1Elements.forEach((element) => {
@@ -52,16 +48,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main >
-      <div className="flex  items-center p-24 box-shadow-[#0F0] blur-[0.5px] text-md sm:text-[24px]">
+    <main>
+      <div className="flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] text-md sm:text-[24px]">
         <motion.div>
           <TypeAnimation
             sequence={[
-              "Wake up user...",
+              'Wake up user...',
               1000,
-              "The blockchain is everywhere...",
+              'The blockchain is everywhere...',
               1000,
-              "Follow the ledger...",
+              'Follow the ledger...',
               1000,
             ]}
             speed={5}
@@ -74,15 +70,21 @@ export default function Home() {
       <div className="flex mx-auto justify-evenly">
         <h1 data-value="HYPERPLEXED" className="">
           <span className="text-[#9F9]">
-            0x</span>79d2Cd79D
+            0x
+          </span>
+          79d2Cd79D
         </h1>
         <h1 data-value="Portfolio" className="">
           <span className="text-[#9F9]">
-            0x</span>79d2Cd79D
+            0x
+          </span>
+          79d2Cd79D
         </h1>
         <h1 data-value="Journey" className="">
           <span className="text-[#9F9]">
-            0x</span>79d2Cd79D
+            0x
+          </span>
+          79d2Cd79D
         </h1>
       </div>
     </main>
