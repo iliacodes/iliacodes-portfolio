@@ -1,5 +1,3 @@
-import '../styles/globals.css'
-import {ubuntuMono} from '../utils/fonts'
 
 export const metadata = {
   title: 'IliaCodes',
@@ -11,9 +9,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body className={ubuntuMono.className}>{children}</body>
-    </html>
-  )
+  return <>{children}</>;
 }

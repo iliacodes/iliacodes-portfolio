@@ -1,55 +1,23 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import './homePage.css';
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-import { generateRandomString } from './utils';
+import '../styles/homePage.css';
 import { MotionConfig } from 'framer-motion';
 import { motion } from 'framer-motion';
+import Nav from '../components/Nav';
+import logo from '../public/logo.png';
+import Image from 'next/image';
 
 
 export default function Home() {
 
-  useEffect(() => {
-    const handleMouseOver = (event: MouseEvent) => {
-      let iteration = 0;
-      const originalText = (event.target as HTMLElement).dataset.value as string;
-
-      let interval = setInterval(() => {
-        (event.target as HTMLElement).innerText = originalText
-          .split("")
-          .map((letter, index) => {
-            if (index < iteration) {
-              return originalText[index];
-            }
-
-            return letters[Math.floor(Math.random() * 26)];
-          })
-          .join("");
-
-        if (iteration >= originalText.length) {
-          clearInterval(interval);
-        }
-
-        iteration += 1 / 5;
-      }, 30);
-    };
-
-    const h1Elements = document.querySelectorAll('h1');
-    h1Elements.forEach((element) => {
-      element.addEventListener('mouseover', handleMouseOver);
-    });
-
-    return () => {
-      h1Elements.forEach((element) => {
-        element.removeEventListener('mouseover', handleMouseOver);
-      });
-    };
-  }, []);
-
   return (
-    <main>
-      <div className="flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] text-md sm:text-[24px]">
+    <main className="border border-red-50">
+      {/* <Image src='/logo.svg' alt='logo' width={100} height={100}>
+        {logo}
+      </Image> */}
+      <Image src={logo} alt='logo' width={100} height={100} />
+      <div className="flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] text-md sm:text-[24px] border border-red-50">
         <motion.div>
           <TypeAnimation
             sequence={[
@@ -60,33 +28,14 @@ export default function Home() {
               'Follow the ledger...',
               1000,
             ]}
-            speed={5}
+            speed={11}
             className="text-[#9F9] font-light tracking-[0.05em] matrix-text scanline pointer-events-none text-[36px]"
             wrapper="span"
             repeat={0}
           />
         </motion.div>
       </div>
-      <div className="flex mx-auto justify-evenly">
-        <h1 data-value="HYPERPLEXED" className="">
-          <span className="text-[#9F9]">
-            0x
-          </span>
-          79d2Cd79D
-        </h1>
-        <h1 data-value="Portfolio" className="">
-          <span className="text-[#9F9]">
-            0x
-          </span>
-          79d2Cd79D
-        </h1>
-        <h1 data-value="Journey" className="">
-          <span className="text-[#9F9]">
-            0x
-          </span>
-          79d2Cd79D
-        </h1>
-      </div>
+      < Nav />
     </main>
   );
 }
