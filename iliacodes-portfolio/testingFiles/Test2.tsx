@@ -1,8 +1,7 @@
 'use client';
 import React, { memo } from "react";
-// import websiteImage from "./website_image.png"
-import websiteImage from "./newPic.png"
 let GLOBAL_EE_ANIMATION_FRAME = -1;
+import websiteImage from './pic1.png';
 
 export const PARTICLE_SUBJECTS: Subjects[] = [
   {

@@ -1,4 +1,5 @@
 import React from 'react'
+import ChatContainer from '../../components/ChatContainer';
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
           About
         </div>
         <div className="p-24">
-          About
+          <ChatContainer />
         </div>
       </div>
     </div>
