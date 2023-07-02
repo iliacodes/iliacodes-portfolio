@@ -32,14 +32,21 @@ const ChatContainer = () => {
     const data = {
       model: "gpt-3.5-turbo",
       messages: [{"role": "user", "content": message}],
+      max_tokens: 15,
     };
 
     setIsLoading(true);
 
     axios.post(url, data, {headers: headers }).then((response) => {
       console.log(response)
+      const botMessage = response.data.choices[0].message.content;
       setLog((prevChatLog) => [...prevChatLog, { type: 'bot', message: response.data.choices[0].message.content }])
       setIsLoading(true);
+
+      if (botMessage.includes("github")) {
+        const customResponse = "https://github.com/iliacodes";
+        setLog((prevChatLog) => [...prevChatLog, { type: 'bot', message: customResponse }]);
+      }
     }).catch((error) => {
       setIsLoading(false);
       console.log(error);

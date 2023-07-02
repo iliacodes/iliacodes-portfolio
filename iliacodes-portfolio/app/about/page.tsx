@@ -12,7 +12,8 @@ const About = () => {
           About
         </div>
         <div className="p-24">
-          <ChatContainer />
+          {/* <ChatContainer /> */}
+          About
         </div>
       </div>
     </div>
