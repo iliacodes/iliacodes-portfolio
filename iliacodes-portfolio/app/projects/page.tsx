@@ -95,7 +95,6 @@ const Projects: React.FC = () => {
               index={index}
               title={project.title}
               setModal={setModalState}
-              showModal={showModal}
             />;
           })}
         </div>
