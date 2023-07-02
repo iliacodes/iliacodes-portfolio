@@ -61,19 +61,19 @@ const Projects: React.FC = () => {
 
   const projects: ProjectItem[] = [
     {
-      title: 'Project 1',
+      title: 'Fan Connect',
       description: 'This is a project',
       src: '/logo.png',
       color: '#9F9',
     },
     {
-      title: 'Project 2',
+      title: 'Moonshot',
       description: 'This is a project',
       src: '/bbq.png',
       color: '#9F9',
     },
     {
-      title: 'Project 3',
+      title: 'Mythos',
       description: 'This is a project',
       src: '/logo.png',
       color: '#9F9',

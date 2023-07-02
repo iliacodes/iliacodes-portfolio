@@ -1,9 +1,10 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { ProjectItem } from './types';
 import styles from './style.module.css';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
+import Link from 'next/link';
 
 
 interface ModalProps {
@@ -71,7 +72,6 @@ const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
       </motion.div>
       <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
       <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
-
     </>
   );
 };
