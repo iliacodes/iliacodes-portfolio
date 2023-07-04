@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Nav from '../components/Nav';
 import logo from '../public/logo.png';
 import Image from 'next/image';
+import Header from '../components/Header';
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       {/* <Image src='/logo.svg' alt='logo' width={100} height={100}>
         {logo}
       </Image> */}
-      <Image src={logo} alt='logo' width={100} height={100} />
+      <Header />
       <div className="flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] text-md sm:text-[24px] border border-red-50">
         <motion.div>
           <TypeAnimation
