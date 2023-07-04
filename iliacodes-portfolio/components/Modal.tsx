@@ -57,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? 'enter' : 'closed'}
-        className={styles.modalContainer}
+        className={`${styles.modalContainer} border border-green-500`}
       >
         <div style={{ top: index * -100 + '%', backgroundColor: 'rgba(255, 255, 255, 0)' }} className={styles.modalSlider}>
           {projects.map((project, index) => {

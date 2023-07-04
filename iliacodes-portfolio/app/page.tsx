@@ -8,12 +8,13 @@ import Nav from '../components/Nav';
 import logo from '../public/logo.png';
 import Image from 'next/image';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
 
   return (
-    <main className="border border-red-50">
+    <main className="border border-red-300">
       {/* <Image src='/logo.svg' alt='logo' width={100} height={100}>
         {logo}
       </Image> */}
@@ -37,6 +38,7 @@ export default function Home() {
         </motion.div>
       </div>
       < Nav />
+      <Footer />
     </main>
   );
 }

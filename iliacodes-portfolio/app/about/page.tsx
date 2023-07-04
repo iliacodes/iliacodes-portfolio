@@ -1,9 +1,12 @@
 import React from 'react'
 import ChatContainer from '../../components/ChatContainer';
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
 const About = () => {
   return (
     <div>
+      <Header />
       <div className="p-5">
         <div className="p-24">
           About
@@ -12,10 +15,10 @@ const About = () => {
           About
         </div>
         <div className="p-24">
-          {/* <ChatContainer /> */}
           About
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

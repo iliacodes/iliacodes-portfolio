@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import Project from '../../components/Project';
 import Modal from '../../components/Modal';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 interface ProjectItem {
@@ -82,6 +84,9 @@ const Projects: React.FC = () => {
 
   return (
     <div>
+      <div>
+        <Header />
+      </div>
       <div className="my-48 flex items-center justify-center text-[64px]">
         <h1 data-value="Projects Completed">
           0x6046945c5b5EF5933b8
@@ -100,6 +105,7 @@ const Projects: React.FC = () => {
         </div>
         <Modal modal={modalState} projects={projects} closeModal={() => setModalState({ active: false, index: 0 })} />
       </div>
+      <Footer />
     </div>
   );
 };
