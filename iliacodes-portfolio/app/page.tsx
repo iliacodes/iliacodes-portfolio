@@ -1,10 +1,10 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import '../styles/homePage.css';
 import { MotionConfig } from 'framer-motion';
-import { motion } from 'framer-motion';
-import Nav from '../components/Nav';
+import { motion, AnimatePresence } from 'framer-motion';
+import Nav from '../components/nav/Nav';
 import logo from '../public/logo.png';
 import Image from 'next/image';
 import Header from '../components/Header';
@@ -12,15 +12,20 @@ import Footer from '../components/Footer';
 
 
 export default function Home() {
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const animationDuration = 5 * 1000;
+    setTimeout(() => {
+      setShowNav(true);
+    }, animationDuration);
+  }, []);
 
   return (
-    <main className="border border-red-300">
-      {/* <Image src='/logo.svg' alt='logo' width={100} height={100}>
-        {logo}
-      </Image> */}
+    <main className="">
       <Header />
-      <div className="flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] text-md sm:text-[24px] border border-red-50">
-        <motion.div>
+      <div className="xl:mx-64 flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] lg:mx-48">
+        <motion.div className="flex items-center">
           <TypeAnimation
             sequence={[
               'Wake up user...',
@@ -30,15 +35,29 @@ export default function Home() {
               'Follow the ledger...',
               1000,
             ]}
-            speed={11}
-            className="text-[#9F9] font-light tracking-[0.05em] matrix-text scanline pointer-events-none text-[36px]"
+            speed={65}
+            className="text-[#9F9] font-light tracking-[0.05em] matrix-text scanline pointer-events-none sm:text-[36px] text-[24px]"
             wrapper="span"
             repeat={0}
           />
         </motion.div>
       </div>
-      < Nav />
-      <Footer />
+      <div className="flex items-center justify-center">
+        <AnimatePresence> {/* Wrap the Nav with AnimatePresence */}
+          {showNav && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+            >
+              <Nav />
+              <Footer />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+      </div>
     </main>
   );
 }

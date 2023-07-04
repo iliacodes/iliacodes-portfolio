@@ -1,15 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '../public/logo.png';
-import { PiTelegramLogo } from 'react-icons/pi';
-import { FiGithub } from 'react-icons/fi';
 import { SiLinkedin } from 'react-icons/si';
 import { PiTelegramLogoBold } from 'react-icons/pi';
 import { PiGithubLogoBold } from 'react-icons/pi';
 
 const Header = () => {
   return (
-    <div className="p-4">
+    <div className="p-4 xl:px-64 lg:px-36">
       <div className="flex items-center justify-between">
         <div className="">
           <Image src={logo} alt='logo' width={125} height={125} />

@@ -57,9 +57,9 @@ const Projects: React.FC = () => {
     index: 0,
   });
 
-  const showModal = (index: number) => {
-    setModalState({ active: true, index });
-  };
+  // const showModal = (index: number) => {
+  //   setModalState({ active: true, index });
+  // };
 
   const projects: ProjectItem[] = [
     {
@@ -87,12 +87,13 @@ const Projects: React.FC = () => {
       <div>
         <Header />
       </div>
-      <div className="my-48 flex items-center justify-center text-[64px]">
-        <h1 data-value="Projects Completed">
+      <div className="my-32">
+        <p className="sm:text-[18px] text-[14px] text-[#D2E2DF] uppercase tracking-wider ">Work + projects.</p>
+        <h1 data-value="Projects Completed" className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           0x6046945c5b5EF5933b8
         </h1>
       </div>
-      <div className="flex h-100vh items-center justify-center">
+      <div className="h-100vh items-center justify-center hidden sm:block">
         <div className="flex w-100vh flex-col items-center justify-center">
           {projects.map((project, index) => {
             return <Project
@@ -105,6 +106,11 @@ const Projects: React.FC = () => {
         </div>
         <Modal modal={modalState} projects={projects} closeModal={() => setModalState({ active: false, index: 0 })} />
       </div>
+        <div className="sm:hidden flex text-white">
+          <h1 className="text-[#9f9]">
+            Mobile view coming soon.
+          </h1>
+        </div>
       <Footer />
     </div>
   );

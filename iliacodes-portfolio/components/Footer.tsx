@@ -6,17 +6,17 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="items-center px-2 flex justify-center p-3">
+    <div className="items-center flex justify-center p-16">
       <div className="flex">
-        <div className="px-4 scale-125 ">
+        <div className="px-8 scale-125 ">
           <PiTelegramLogoBold />
 
         </div>
-        <div className="px-4 scale-125">
+        <div className="px-8 scale-125">
           <PiGithubLogoBold />
 
         </div>
-        <div className="px-4 scale-125">
+        <div className="px-8 scale-125">
           <SiLinkedin />
 
         </div>
