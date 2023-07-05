@@ -9,7 +9,7 @@ interface Props {
 
 const Project: React.FC<Props> = ({ index, title, setModal }) => {
   return (
-    <div>
+    <div className="">
       <div className="project flex w-screen justify-between items-center p-10  border-t border-zinc-300 cursor-pointer transition-all duration-200 last:border-b hover:opacity-50 hover:h-2:translate-x-10 hover:p:translate-x-10"
         onMouseEnter={() => { setModal({ active: true, index: index }); }}
         onMouseLeave={() => { setModal({ active: false, index: index }); }}

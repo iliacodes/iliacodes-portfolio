@@ -4,6 +4,7 @@ import Project from '../../components/Project';
 import Modal from '../../components/Modal';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import SubHeader from '../../components/SubHeader';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 interface ProjectItem {
@@ -57,10 +58,6 @@ const Projects: React.FC = () => {
     index: 0,
   });
 
-  // const showModal = (index: number) => {
-  //   setModalState({ active: true, index });
-  // };
-
   const projects: ProjectItem[] = [
     {
       title: 'Fan Connect',
@@ -84,17 +81,18 @@ const Projects: React.FC = () => {
 
   return (
     <div>
-      <div>
+      <div className="flex-col items-center justify-center">
         <Header />
+        <SubHeader />
       </div>
       <div className="my-32">
-        <p className="sm:text-[18px] text-[14px] text-[#D2E2DF] uppercase tracking-wider ">Work + projects.</p>
-        <h1 data-value="Projects Completed" className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <p className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0">Work + projects.</p>
+        <h1 data-value="Projects Completed" className="text-white font-black md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0">
           0x6046945c5b5EF5933b8
         </h1>
       </div>
-      <div className="h-100vh items-center justify-center hidden sm:block">
-        <div className="flex w-100vh flex-col items-center justify-center">
+      <div className="h-100vh items-center justify-center hidden sm:block ">
+        <div className="flex flex-col items-center justify-center  ">
           {projects.map((project, index) => {
             return <Project
               key={index}
