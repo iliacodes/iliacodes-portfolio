@@ -1,20 +1,21 @@
 import React from 'react'
+import Link from 'next/link'
 
 const SubHeader = () => {
   return (
-    <div className="mx-12 text-[18px] sm:text-[24px] text-white flex justify-evenly items-center xl:px-24">
-        <div className="">
+    <div className="mx-12 my-5 text-[18px] sm:text-[24px] text-white flex justify-evenly items-center xl:px-24">
+        <Link href="/about" >
           About
-        </div>
-        <div>
+        </Link>
+        <Link href="/journey">
           Journey
-        </div>
-        <div>
+        </Link>
+        <Link href="/projects">
           Projects
-        </div>
-        <div>
+        </Link>
+        <Link href='/contact'>
           Contact
-        </div>
+        </Link>
     </div>
   )
 }

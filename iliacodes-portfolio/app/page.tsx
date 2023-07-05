@@ -43,7 +43,7 @@ export default function Home() {
         </motion.div>
       </div>
       <div className="flex items-center justify-center">
-        <AnimatePresence> {/* Wrap the Nav with AnimatePresence */}
+        <AnimatePresence>
           {showNav && (
             <motion.div
               initial={{ opacity: 0 }}

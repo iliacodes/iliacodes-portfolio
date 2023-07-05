@@ -1,8 +1,8 @@
 'use client';
-import { useState, useEffect } from 'react';
+///@note just practicing using the OpenAI API.
+
+import { useState } from 'react';
 import axios from 'axios';
-
-
 const ChatContainer = () => {
   const [inputVal, setInputVal] = useState<string>('');
   const [log, setLog] = useState<LogItem[]>([]);

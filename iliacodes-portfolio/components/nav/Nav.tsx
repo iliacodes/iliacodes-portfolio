@@ -72,7 +72,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-          <div className="flex items-center p-5 sm:p-10 m-5">
+          <div className="flex items-center p-2 sm:p-10 m-5">
             <h2 >
               <span className="text-[#9F9]">
                 0x
@@ -84,7 +84,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/about">
             <h1 data-value=" About " className="">
               <span className="text-[#9F9]">
@@ -98,7 +98,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <h2 >
             <span className="text-[#9F9]">
               0x
@@ -110,7 +110,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/journey">
             <h1 data-value=" Journey " className="">
               <span className="text-[#9F9]">
@@ -124,7 +124,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center p-5 sm:p-10 m-5 ">
+        <div className="flex items-center p-2 sm:p-10 m-5 ">
           <h2 >
             <span className="text-[#9F9]">
               0x
@@ -136,7 +136,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <h2 >
             <span className="text-[#9F9]">
               0x
@@ -148,7 +148,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center  p-5 sm:p-10 m-5">
+        <div className="flex items-center  p-2 sm:p-10 m-5">
           <Link href="/projects">
             <h1 data-value="Projects" className="">
               <span className="text-[#9F9] ">
@@ -162,7 +162,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center 50 p-5 sm:p-10 m-5">
+        <div className="flex items-center 50 p-2 sm:p-10 m-5">
           <h2 >
             <span className="text-[#9F9]">
               0x
@@ -174,7 +174,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <h2 >
             <span className="text-[#9F9]">
               0x
@@ -186,7 +186,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center  p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/contact">
             <h1 data-value=" Contact " className="">
               <span className="text-[#9F9]">
@@ -200,7 +200,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center  p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <h2 >
             <span className="text-[#9F9]">
               0x
@@ -209,7 +209,7 @@ export default function Nav() {
           </h2>
         </div>
         </motion.div>
-        <div className="flex items-center p-5 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <h2 >
             <span className="text-[#9F9]">
               0x

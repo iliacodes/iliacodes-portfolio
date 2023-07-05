@@ -57,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? 'enter' : 'closed'}
-        className={`${styles.modalContainer} border border-green-500`}
+        className={`${styles.modalContainer}`}
       >
         <div style={{ top: index * -100 + '%', backgroundColor: 'rgba(255, 255, 255, 0)' }} className={styles.modalSlider}>
           {projects.map((project, index) => {
@@ -71,7 +71,7 @@ const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
         </div>
       </motion.div>
       <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-      <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
+      <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>undefined:~$ tar -xf</motion.div>
     </>
   );
 };

@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
         }
 
         iteration += 1 / 5;
-      }, 10);
+      }, 6);
     };
 
     const h1Elements = document.querySelectorAll('h1');
@@ -87,7 +87,7 @@ const Projects: React.FC = () => {
       </div>
       <div className="my-32">
         <p className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0">Work + projects.</p>
-        <h1 data-value="Projects Completed" className="text-white font-black md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0">
+        <h1 data-value="Projects Completed." className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0">
           0x6046945c5b5EF5933b8
         </h1>
       </div>
