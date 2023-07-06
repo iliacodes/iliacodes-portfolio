@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+
       <ToastContainer />
       <Component {...pageProps} />
     </>

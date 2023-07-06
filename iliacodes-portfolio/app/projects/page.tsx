@@ -5,6 +5,7 @@ import Modal from '../../components/Modal';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import SubHeader from '../../components/SubHeader';
+import Test2 from '../../components/Particles';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 interface ProjectItem {
@@ -81,6 +82,9 @@ const Projects: React.FC = () => {
 
   return (
     <div>
+              <Test2
+        showAnimation={true}
+        />
       <div className="flex-col items-center justify-center">
         <Header />
         <SubHeader />

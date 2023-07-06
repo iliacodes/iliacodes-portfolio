@@ -1,6 +1,6 @@
 'use client';
 import { useEffect } from 'react';
-import Test2 from '../../testingFiles/Test2';
+import Test2 from '../../components/Particles';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -96,27 +96,29 @@ const Journey = () => {
 
   return (
     <>
-      <div className="flex-col items-center justify-center">
-        <Header />
-        <SubHeader />
+      <div>
+      <Test2
+        showAnimation={true}
+      />
+        <div className="flex-col items-center justify-center">
+          <Header />
+          <SubHeader />
+        </div>
+        <motion.div
+          className="my-32"
+        >
+          <p className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0">Journey so far.</p>
+          <h1 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0" data-value="Experience.">Experience.</h1>
+        </motion.div>
+        <div className="mt-20 flex flex-col">
+          <VerticalTimeline>
+            {experiences.map((experience, index) => (
+              <ExperienceCard key={index} experience={experience} />
+            ))}
+          </VerticalTimeline>
+        </div>
+        <Footer />
       </div>
-      <motion.div
-        className="my-32"
-      >
-        <p className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0">Journey so far.</p>
-        <h1 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0" data-value="Experience.">Experience.</h1>
-      </motion.div>
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
-        </VerticalTimeline>
-      </div>
-      {/* < Test2
-      showAnimation={true}
-      /> */}
-      <Footer />
 
     </>
   );

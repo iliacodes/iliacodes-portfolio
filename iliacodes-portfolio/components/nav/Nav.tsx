@@ -51,7 +51,7 @@ export default function Nav() {
         }
 
         iteration += 1 / 5;
-      }, 30);
+      }, 10);
     };
 
     const h1Elements = document.querySelectorAll('h1');
@@ -68,7 +68,7 @@ export default function Nav() {
 
   return (
     <nav className="flex items-center justify-center">
-      <div className='mx-8 mt-10 sm:mt-20 flex flex-wrap sm:gap-5 sm:p-10 lg:mx-24 xl:mx-48 gap-5'>
+      <div className='mx-8 mt-10 sm:mt-20 flex flex-wrap sm:gap-5 sm:p-10 lg:mx-24 xl:mx-48 gap-5 sm:text-[18px]'>
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
@@ -86,11 +86,11 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/about">
-            <h1 data-value=" About " className="">
+            <h1 data-value=":$~ cd about/" className="">
               <span className="text-[#9F9]">
                 0x
               </span>
-              79d2Cd79D
+              79d2Cd79D2
             </h1>
           </Link>
         </div>
@@ -112,7 +112,7 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/journey">
-            <h1 data-value=" Journey " className="">
+            <h1 data-value=":$~ cd journey/" className="">
               <span className="text-[#9F9]">
                 0x
               </span>
@@ -150,7 +150,7 @@ export default function Nav() {
         >
         <div className="flex items-center  p-2 sm:p-10 m-5">
           <Link href="/projects">
-            <h1 data-value="Projects" className="">
+            <h1 data-value=":$~ cd projects/" className="">
               <span className="text-[#9F9] ">
                 0x
               </span>
@@ -188,7 +188,7 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/contact">
-            <h1 data-value=" Contact " className="">
+            <h1 data-value=":$~ cd contact/" className="">
               <span className="text-[#9F9]">
                 0x
               </span>

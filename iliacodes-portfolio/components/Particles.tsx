@@ -1,7 +1,7 @@
 'use client';
 import React, { memo } from "react";
 let GLOBAL_EE_ANIMATION_FRAME = -1;
-import websiteImage from './pic1.png';
+import websiteImage from '../testingFiles/pic1.png';
 
 export const PARTICLE_SUBJECTS: Subjects[] = [
   {
@@ -112,40 +112,40 @@ function beginAnimation(
     canvas.height = canvas.clientHeight;
 
     const particlesArray: Particle[] = [];
-    const numberOfParticles = 12000;
+    const numberOfParticles = 2400;
     const detail = 1;
 
-    if (image.naturalHeight < image.naturalWidth) {
-      const imageWidth = canvas.width * 0.5;
-      const imageHeight =
-        canvas.width * 0.5 * (image.naturalHeight / image.naturalWidth);
-      ctx.drawImage(
-        image,
-        0,
-        0,
-        image.naturalWidth,
-        image.naturalHeight,
-        (canvas.width - imageWidth) / 2,
-        (canvas.height - imageHeight) / 2,
-        imageWidth,
-        imageHeight
-      );
-    } else {
-      const imageHeight = canvas.height * 0.5;
-      const imageWidth =
-        canvas.height * 0.5 * (image.naturalWidth / image.naturalHeight);
-      ctx.drawImage(
-        image,
-        0,
-        0,
-        image.naturalWidth,
-        image.naturalHeight,
-        (canvas.width - imageWidth) / 2,
-        (canvas.height - imageHeight) / 2,
-        imageWidth,
-        imageHeight
-      );
-    }
+    // if (image.naturalHeight < image.naturalWidth) {
+    //   const imageWidth = canvas.width * 0.5;
+    //   const imageHeight =
+    //     canvas.width * 0.5 * (image.naturalHeight / image.naturalWidth);
+    //   ctx.drawImage(
+    //     image,
+    //     0,
+    //     0,
+    //     image.naturalWidth,
+    //     image.naturalHeight,
+    //     (canvas.width - imageWidth) / 2,
+    //     (canvas.height - imageHeight) / 2,
+    //     imageWidth,
+    //     imageHeight
+    //   );
+    // } else {
+    //   const imageHeight = canvas.height * 0.5;
+    //   const imageWidth =
+    //     canvas.height * 0.5 * (image.naturalWidth / image.naturalHeight);
+    //   ctx.drawImage(
+    //     image,
+    //     0,
+    //     0,
+    //     image.naturalWidth,
+    //     image.naturalHeight,
+    //     (canvas.width - imageWidth) / 2,
+    //     (canvas.height - imageHeight) / 2,
+    //     imageWidth,
+    //     imageHeight
+    //   );
+    // }
 
     const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -228,7 +228,7 @@ export function SubjectComponent(props: SubjectsRenderProps): JSX.Element {
         position: "absolute",
         width: "100vw",
         height: "100vh",
-        zIndex: 1000,
+        zIndex: -100,
         top: 0,
         left: 0,
         display: "flex",
