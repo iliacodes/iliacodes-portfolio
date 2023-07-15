@@ -68,16 +68,16 @@ export default function Nav() {
 
   return (
     <nav className="flex items-center justify-center">
-      <div className='mx-8 mt-10 sm:mt-20 flex flex-wrap sm:gap-5 sm:p-10 lg:mx-24 xl:mx-48 gap-5 sm:text-[18px]'>
+      <div className='mx-8 mt-10 sm:mt-20 flex flex-wrap sm:gap-5 sm:p-10 lg:mx-24 xl:mx-48 gap-5 sm:text-[18px] justify-evenly'>
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
           <div className="flex items-center p-2 sm:p-10 m-5">
-            <h2 >
+            <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
               <span className="text-[#9F9]">
                 0x
               </span>
-              79d2Cd79D
+              caecad0Df
             </h2>
           </div>
         </motion.div>
@@ -86,11 +86,11 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/about">
-            <h1 data-value=":$~ cd about/" className="">
+            <h1 data-value="about/" className="md:w-[200px] sm:w-[150px] w-[109px]">
               <span className="text-[#9F9]">
                 0x
               </span>
-              79d2Cd79D2
+              9f333a11a
             </h1>
           </Link>
         </div>
@@ -99,7 +99,7 @@ export default function Nav() {
           variants={fadeIn("right", "", 0.1, 1)}
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
-          <h2 >
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
             </span>
@@ -112,11 +112,11 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/journey">
-            <h1 data-value=":$~ cd journey/" className="">
+            <h1 data-value="journey/" className="md:w-[200px] w-[109px] sm:w-[150px]">
               <span className="text-[#9F9]">
                 0x
               </span>
-              79d2Cd79D
+              8a60232aB
             </h1>
           </Link>
         </div>
@@ -125,11 +125,11 @@ export default function Nav() {
           variants={fadeIn("right", "", 0.1, 1)}
         >
         <div className="flex items-center p-2 sm:p-10 m-5 ">
-          <h2 >
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
             </span>
-            79d2Cd79D
+            787dc355f
           </h2>
         </div>
         </motion.div>
@@ -137,11 +137,11 @@ export default function Nav() {
           variants={fadeIn("right", "", 0.1, 1)}
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
-          <h2 >
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
             </span>
-            79d2Cd79D
+            a4630e238
           </h2>
         </div>
         </motion.div>
@@ -150,11 +150,11 @@ export default function Nav() {
         >
         <div className="flex items-center  p-2 sm:p-10 m-5">
           <Link href="/projects">
-            <h1 data-value=":$~ cd projects/" className="">
+            <h1 data-value="projects/" className="md:w-[200px] w-[109px] sm:w-[150px]">
               <span className="text-[#9F9] ">
                 0x
               </span>
-              79d2Cd79D
+              8Y4bD2CE
             </h1>
           </Link>
         </div>
@@ -163,11 +163,11 @@ export default function Nav() {
           variants={fadeIn("right", "", 0.1, 1)}
         >
         <div className="flex items-center 50 p-2 sm:p-10 m-5">
-          <h2 >
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
             </span>
-            79d2Cd79D
+            79p2yu69F
           </h2>
         </div>
         </motion.div>
@@ -175,11 +175,11 @@ export default function Nav() {
           variants={fadeIn("right", "", 0.1, 1)}
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
-          <h2 >
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
             </span>
-            79d2Cd79D
+            22d2zdp9K
           </h2>
         </div>
         </motion.div>
@@ -188,11 +188,11 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/contact">
-            <h1 data-value=":$~ cd contact/" className="">
+            <h1 data-value="contact/" className="md:w-[200px] w-[109px] sm:w-[150px]">
               <span className="text-[#9F9]">
                 0x
               </span>
-              79d2Cd79D
+              oP02Fg31A
             </h1>
           </Link>
         </div>
@@ -201,20 +201,68 @@ export default function Nav() {
           variants={fadeIn("right", "", 0.1, 1)}
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
-          <h2 >
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
             </span>
-            79d2Cd79D
+            KklI1ms1
           </h2>
         </div>
         </motion.div>
         <div className="flex items-center p-2 sm:p-10 m-5">
-          <h2 >
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
             </span>
-            79d2Cd79D
+            79d2Gh6Ac
+          </h2>
+        </div>
+        <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <span className="text-[#9F9]">
+              0x
+            </span>
+            8a60232eF
+          </h2>
+        </div>
+        <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <span className="text-[#9F9]">
+              0x
+            </span>
+            8318db26e
+          </h2>
+        </div>
+        <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <span className="text-[#9F9]">
+              0x
+            </span>
+            B21cd0819
+          </h2>
+        </div>
+        <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <span className="text-[#9F9]">
+              0x
+            </span>
+            e28bb477c
+          </h2>
+        </div>
+        <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <span className="text-[#9F9]">
+              0x
+            </span>
+            755c2fe82
+          </h2>
+        </div>
+        <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
+          <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <span className="text-[#9F9]">
+              0x
+            </span>
+            c5cb5c9a9
           </h2>
         </div>
       </div>

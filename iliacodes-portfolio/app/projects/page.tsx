@@ -82,9 +82,9 @@ const Projects: React.FC = () => {
 
   return (
     <div>
-              <Test2
+              {/* <Test2
         showAnimation={true}
-        />
+        /> */}
       <div className="flex-col items-center justify-center">
         <Header />
         <SubHeader />

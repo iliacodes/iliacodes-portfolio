@@ -25,9 +25,9 @@ export default function Home() {
 
   return (
     <main className="">
-      <Test2
+      {/* <Test2
         showAnimation={true}
-      />
+      /> */}
       <Header />
       <div className="xl:mx-64 flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] lg:mx-48">
         <motion.div className="flex items-center">
