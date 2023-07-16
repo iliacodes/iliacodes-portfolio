@@ -60,8 +60,8 @@ const FanConnect = () => {
           <Header />
           <SubHeader />
           <div className="my-32">
-            <h2 className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex">
-              <Link href="fan-connect" className="mr-5 text-[#9F9]">
+            <h2 className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex items-center">
+              <Link href="fan-connect" className="mr-5 border border-white p-2">
                 FanConnect /
               </Link>
               <Link href="moonshot" className="mx-5">

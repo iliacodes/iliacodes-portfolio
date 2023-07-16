@@ -41,7 +41,7 @@ export default function Home() {
               1000,
             ]}
             speed={65}
-            className="text-[#9F9] font-light tracking-[0.05em] matrix-text scanline pointer-events-none sm:text-[36px] text-[24px]"
+            className="text-[#0F0] tracking-[0.05em] pointer-events-none sm:text-[36px] text-[24px] font-semibold"
             wrapper="span"
             repeat={0}
           />

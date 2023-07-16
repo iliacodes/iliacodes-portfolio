@@ -66,7 +66,7 @@ const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
             const { src } = project;
             return (
               <div className={styles.modal} key={`modal_${index}`}>
-                <Image src={`${src}`} width={300} height={0} alt="image" />
+                <Image src={`${src}`} width={800} height={0} alt="image" />
               </div>
             );
           })}

@@ -8,9 +8,6 @@ import Test2 from '@/components/Particles';
 const Contact = () => {
   return (
     <div>
-      {/* <Test2
-        showAnimation={true}
-      /> */}
       <div className="">
         <Header />
         <SubHeader />
