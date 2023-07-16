@@ -28,6 +28,8 @@ const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
   const modalContainer = useRef<HTMLDivElement>(null);
   const cursor = useRef<HTMLDivElement>(null);
   const cursorLabel = useRef<HTMLDivElement>(null);
+  const [expanded, setExpanded] = useState(false);
+
 
   useEffect(() => {
     //Move Container

@@ -13,7 +13,6 @@ import SubHeader from '@/components/SubHeader';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
-
 interface Experience {
   title: string;
   company_name: string;
@@ -22,9 +21,6 @@ interface Experience {
   date: string;
   points: string[];
 }
-
-
-
 
 const ExperienceCard: React.FC<{ experience: Experience; }> = ({ experience }) => (
 

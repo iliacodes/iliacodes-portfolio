@@ -8,11 +8,13 @@ import SubHeader from '../../components/SubHeader';
 import Test2 from '../../components/Particles';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+
 interface ProjectItem {
   title: string;
   description: string;
   src: string;
   color: string;
+  link: string;
 }
 
 const Projects: React.FC = () => {
@@ -62,21 +64,25 @@ const Projects: React.FC = () => {
   const projects: ProjectItem[] = [
     {
       title: 'Fan Connect',
-      description: 'This is a project',
+      description: 'Fan Connect solves some ',
       src: '/logo.png',
       color: '#9F9',
+      link: 'fan-connect'
     },
     {
       title: 'Moonshot',
-      description: 'This is a project',
+      description: 'This is a project for moonshot',
       src: '/bbq.png',
       color: '#9F9',
+      link: 'moonshot'
+
     },
     {
       title: 'Mythos',
-      description: 'This is a project',
+      description: 'This is a project for mythos',
       src: '/logo.png',
       color: '#9F9',
+      link: 'mythos',
     },
   ];
 
@@ -92,7 +98,7 @@ const Projects: React.FC = () => {
       <div className="my-32">
         <p className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0">Work + projects.</p>
         <h1 data-value="Projects Completed." className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0">
-          0x6046945c5b5EF5933b8
+          Projects Completed.
         </h1>
       </div>
       <div className="h-100vh items-center justify-center hidden sm:block ">
@@ -102,6 +108,8 @@ const Projects: React.FC = () => {
               key={index}
               index={index}
               title={project.title}
+              description={project.description}
+              link={project.link}
               setModal={setModalState}
             />;
           })}

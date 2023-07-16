@@ -65,10 +65,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[1] bg-[#072A24]-100  rounded-2xl relative z-10 my-32"
+    <div className="flex xl:flex-row flex-col-reverse  overflow-hidden">
+      <div
+        // variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex-[1] bg-[#072A24]-100 rounded-2xl relative z-10 my-28"
       >
         <p className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0">Get in touch</p>
         <h3 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0">Contact.</h3>
@@ -119,7 +119,7 @@ const ContactForm = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
     </div>
   );
 };
