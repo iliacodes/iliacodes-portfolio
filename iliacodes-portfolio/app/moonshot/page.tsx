@@ -9,6 +9,7 @@ import { TbWorldShare } from 'react-icons/tb';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 import { SiReact, SiExpress, SiPostgresql, SiAxios, SiBootstrap, SiSass } from 'react-icons/si';
 import Footer from '../../components/Footer';
+import Image from 'next/image';
 
 const Moonshot = () => {
   useEffect(() => {
@@ -66,10 +67,10 @@ const Moonshot = () => {
               </Link>
             </h2>
             <h1 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0" data-value="Moonshot.">Moonshot.</h1>
+            <div className="text-[24px] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 mb-5">
+              Built with:
+            </div>
             <h2 className="sm:text-[32px] text-[20px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 mb-12 flex items-center">
-              <div className="text-[24px]">
-                Built with:
-              </div>
               <div className="mx-10 text-[#61DBFB]">
                 <SiReact title="React" />
               </div>
@@ -105,6 +106,9 @@ const Moonshot = () => {
             <h2 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-[#D2E2DF]">
               Moonshot is a platform that allows users to track real-time prices accross a variety of assets including cryptocurrencies, stocks, and NFT&apos;s.
             </h2>
+            <div className="items-center justify-center mb-5 mx-5 flex sm:mx-24 md:mx-32 xl:mx-0">
+              <Image src="/general.gif" alt="LandingPage" width={1000} height={100}/>
+            </div>
             <h2 className="lowercase sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 font-bold text-white">
               currently:
             </h2>
@@ -120,6 +124,9 @@ const Moonshot = () => {
             <h3 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-purple-400">
               track stocks, crypto, and NFT&apos;s in one place as easily as you would on CoinGecko or CoinMarketCap.
             </h3>
+            <div className="items-center justify-center mb-5 mx-5 flex  sm:mx-24 md:mx-32 xl:mx-0">
+              <Image src="/Favoriting.gif" alt="Favoriting" width={1000} height={100} />
+            </div>
           </div>
         </div>
         <Footer />

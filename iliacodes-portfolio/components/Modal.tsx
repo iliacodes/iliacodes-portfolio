@@ -73,7 +73,7 @@ const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
         </div>
       </motion.div>
       <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-      <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>undefined:~$ tar -xf</motion.div>
+      <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>Explore</motion.div>
     </>
   );
 };

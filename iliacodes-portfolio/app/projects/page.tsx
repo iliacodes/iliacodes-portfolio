@@ -65,14 +65,14 @@ const Projects: React.FC = () => {
     {
       title: 'Fan Connect',
       description: 'Fan Connect solves some ',
-      src: '/logo.png',
+      src: '/LandingPage.png',
       color: '#9F9',
       link: 'fan-connect'
     },
     {
       title: 'Moonshot',
       description: 'This is a project for moonshot',
-      src: '/bbq.png',
+      src: '/World.png',
       color: '#9F9',
       link: 'moonshot'
 
@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
     {
       title: 'Mythos',
       description: 'This is a project for mythos',
-      src: '/logo.png',
+      src: '/Condensed_Logo.png',
       color: '#9F9',
       link: 'mythos',
     },

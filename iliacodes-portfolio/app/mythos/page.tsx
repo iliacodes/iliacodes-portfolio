@@ -7,8 +7,9 @@ import dynamic from 'next/dynamic';
 import { PiGithubLogoBold } from 'react-icons/pi';
 import {TbWorldShare} from 'react-icons/tb';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-import {SiTailwindcss, SiSolidity, SiReact} from 'react-icons/si';
+import {SiTailwindcss, SiReact} from 'react-icons/si';
 import Footer from '../../components/Footer';
+import Image from 'next/image';
 
 
 const Mythos = () => {
@@ -67,10 +68,10 @@ const Mythos = () => {
               </Link>
             </h2>
             <h1 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0" data-value="Mythos.">Mythos.</h1>
+            <div className="text-[24px] uppercase tracking-wider p-5 xl:mx-64 xl:p-0">
+              Built with:
+            </div>
             <h2 className="sm:text-[32px] text-[20px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex items-center mb-12">
-              <div className="text-[24px]">
-                Built with:
-              </div>
               <div className="mx-10 text-[#61DBFB]" title="React">
                 <SiReact />
               </div>
@@ -78,7 +79,7 @@ const Mythos = () => {
                 <SiTailwindcss />
               </div>
             </h2>
-            <h2 className="sm:text-[32px] text-[20px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex ">
+            <h2 className="sm:text-[32px] text-[20px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex items-center">
               <div className="text-[24px]">
                 Links:
               </div>
@@ -96,6 +97,9 @@ const Mythos = () => {
             <h2 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-[#D2E2DF]">
               Mythos is a browser based game built in unity. Users can battle NPC&apos;s other users and earn rewards completing quests in the galaxies.
             </h2>
+            <div className="items-center justify-center mb-5 mx-5 flex sm:mx-24 md:mx-32 xl:mx-0">
+              <Image src="/pilots-mobile-demon.png" alt="alien" width={1000} height={100}/>
+            </div>
             <h2 className="lowercase sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 font-bold text-white">
               currently:
             </h2>
@@ -108,6 +112,9 @@ const Mythos = () => {
             <h3 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-purple-400">
               Mythos will alow users to own their NFT&apos;s which provide specific boosts depending on the faction. Users will also be able to gain rewards and purchase items in-game. They then will be able to sell these items on the marketplace to other users.
             </h3>
+            <div className="items-center justify-center mb-5 mx-5 flex  sm:mx-24 md:mx-32 xl:mx-0">
+              <Image src="/pilots-mobile-alien.png" alt="alien" width={1000} height={100} />
+            </div>
           </div>
         </div>
         <Footer />
