@@ -103,7 +103,7 @@ const Moonshot = () => {
           </div>
           <div className="sm:text-[22px] text-[18px] text-[#D2E2DF] uppercase tracking-wider xl:mx-64 xl:p-0 flex-col justify-center ">
             <h2 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-[#D2E2DF]">
-              Moonshot is a platform that allows users to track real-time prices accross a variety of assets including cryptocurrencies, stocks, and NFT's.
+              Moonshot is a platform that allows users to track real-time prices accross a variety of assets including cryptocurrencies, stocks, and NFT&apos;s.
             </h2>
             <h2 className="lowercase sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 font-bold text-white">
               currently:
@@ -112,13 +112,13 @@ const Moonshot = () => {
               There are only crypto agnostic or stock specific platforms.
             </h3>
             <h3 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-purple-400">
-              Detailed price tracking available on TradingView, but does not include NFT's.
+              Detailed price tracking available on TradingView, but does not include NFT&apos;s.
             </h3>
             <h2 className="lowercase sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 font-bold text-white">
               moonshot:
             </h2>
             <h3 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-purple-400">
-              track stocks, crypto, and NFT's in one place as easily as you would on CoinGecko or CoinMarketCap.
+              track stocks, crypto, and NFT&apos;s in one place as easily as you would on CoinGecko or CoinMarketCap.
             </h3>
           </div>
         </div>

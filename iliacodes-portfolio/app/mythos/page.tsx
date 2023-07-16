@@ -94,7 +94,7 @@ const Mythos = () => {
           </div>
           <div className="sm:text-[22px] text-[18px] text-[#D2E2DF] uppercase tracking-wider xl:mx-64 xl:p-0 flex-col justify-center ">
             <h2 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-[#D2E2DF]">
-              Mythos is a browser based game built in unity. Users can battle NPC's other users and earn rewards completing quests in the galaxies.
+              Mythos is a browser based game built in unity. Users can battle NPC&apos;s other users and earn rewards completing quests in the galaxies.
             </h2>
             <h2 className="lowercase sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 font-bold text-white">
               currently:
@@ -106,7 +106,7 @@ const Mythos = () => {
               mythos:
             </h2>
             <h3 className="sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 text-purple-400">
-              Mythos will alow users to own their NFT's which provide specific boosts depending on the faction. Users will also be able to gain rewards and purchase items in-game. They then will be able to sell these items on the marketplace to other users.
+              Mythos will alow users to own their NFT&apos;s which provide specific boosts depending on the faction. Users will also be able to gain rewards and purchase items in-game. They then will be able to sell these items on the marketplace to other users.
             </h3>
           </div>
         </div>
