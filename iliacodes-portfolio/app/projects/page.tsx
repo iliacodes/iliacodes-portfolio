@@ -64,14 +64,14 @@ const Projects: React.FC = () => {
   const projects: ProjectItem[] = [
     {
       title: 'Fan Connect',
-      description: 'Fan Connect solves some ',
+      description: 'Creator subscription platform built on Aurora. ',
       src: '/LandingPage.png',
       color: '#9F9',
       link: 'fan-connect'
     },
     {
       title: 'Moonshot',
-      description: 'This is a project for moonshot',
+      description: 'Real-time price tracking for crypto, stocks, and NFTs.',
       src: '/World.png',
       color: '#9F9',
       link: 'moonshot'
@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
     },
     {
       title: 'Mythos',
-      description: 'This is a project for mythos',
+      description: 'Landing page for an NFT project built on Unity.',
       src: '/Condensed_Logo.png',
       color: '#9F9',
       link: 'mythos',
@@ -88,9 +88,6 @@ const Projects: React.FC = () => {
 
   return (
     <div>
-              {/* <Test2
-        showAnimation={true}
-        /> */}
       <div className="flex-col items-center justify-center">
         <Header />
         <SubHeader />

@@ -1,6 +1,3 @@
-import React from 'react';
-import ProjectCard from './ProjectCard';
-
 interface Props {
   index: number;
   title: string;
@@ -26,7 +23,6 @@ const Project: React.FC<Props> = ({ index, title, description, link, setModal })
         <p className="font-light transition-all duration-400">{description}</p>
       </div>
       <div>
-        {/* <ProjectCard /> */}
       </div>
     </div>
   );

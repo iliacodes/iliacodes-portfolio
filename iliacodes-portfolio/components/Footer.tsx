@@ -6,7 +6,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="items-center flex justify-center p-16">
+    <div className="items-center flex justify-center p-16 mb-24 border-t border-zinc-500">
       <div className="flex">
         <div className="px-8 scale-125 ">
           <PiTelegramLogoBold />
