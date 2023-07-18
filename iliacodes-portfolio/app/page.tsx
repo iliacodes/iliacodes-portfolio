@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import '../styles/homePage.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import Nav from '../components/nav/Nav';
+import NavMobile from '../components/nav/NavMobile';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -22,7 +23,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className="xl:mx-64 flex items-center p-24 lg:mx-48">
+      <div className="xl:mx-64 items-center p-24 lg:mx-48 hidden sm:block">
         <motion.div className="flex items-center">
           <TypeAnimation
             sequence={[
@@ -40,6 +41,22 @@ export default function Home() {
           />
         </motion.div>
       </div>
+      <div className="flex flex-col items-center p-8 sm:hidden">
+        <TypeAnimation
+          sequence={[
+            'hello user...',
+            1000,
+            'the blockchain is everywhere...',
+            1000,
+            'follow the ledger...',
+            1000,
+          ]}
+          speed={65}
+          className="text-[#0F0] tracking-[0.05em] pointer-events-none sm:text-[36px] text-[24px] font-semibold"
+          wrapper="span"
+          repeat={0}
+        />
+      </div>
       <div className="flex items-center justify-center">
         <AnimatePresence>
           {showNav && (
@@ -49,8 +66,15 @@ export default function Home() {
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
             >
-              <Nav />
-              <Footer />
+              <div className="hidden sm:block">
+                <Nav />
+              </div>
+              <div className="sm:hidden">
+                <NavMobile />
+              </div>
+              <div className="mt-24 sm:mt-0">
+                <Footer />
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
