@@ -70,7 +70,7 @@ const Moonshot = () => {
             <div className="text-[24px] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 mb-5">
               Built with:
             </div>
-            <h2 className="sm:text-[32px] text-[20px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 mb-12 flex items-center">
+            <h2 className="sm:text-[32px] text-[20px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex items-center mb-12 flex-wrap gap-5">
               <div className="mx-10 text-[#61DBFB]">
                 <SiReact title="React" />
               </div>
