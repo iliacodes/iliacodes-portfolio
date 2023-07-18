@@ -30,7 +30,7 @@ export default function Nav(): JSX.Element {
             if (link) {
               window.location.href = link.href;
             }
-          }, 500);
+          }, 2000);
         }
       }, 10);
     };
