@@ -16,22 +16,22 @@ const Header = () => {
 
           </div>
         </Link>
-        <div className="lg:text-[22px] text-[18px]">
+        <div className="lg:text-[22px] text-[18px]" >
           Blockchain Developer / Auditor
         </div>
         <div className="items-center px-2 hidden sm:block">
           <div className="flex">
-            <Link href="https://t.me/iliacodes">
+            <Link href="https://t.me/iliacodes" target="_blank">
             <div className="px-4 scale-125 ">
               <PiTelegramLogoBold />
             </div>
             </Link>
-            <Link href="https://github.com/iliacodes">
+            <Link href="https://github.com/iliacodes" target="_blank">
               <div className="px-4 scale-125">
                 <PiGithubLogoBold />
               </div>
             </Link>
-            <Link href="https://linkedin.com/in/0x-ilia">
+            <Link href="https://linkedin.com/in/0x-ilia" target="_blank">
               <div className="px-4 scale-125">
                 <SiLinkedin />
               </div>
