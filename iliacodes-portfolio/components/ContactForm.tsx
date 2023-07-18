@@ -120,7 +120,7 @@ const ContactForm = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className='mt-12 flex flex-col gap-8 mx-24 xl:mx-64'
+            className='mt-12 flex flex-col gap-8 sm:mx-24 mx-8 xl:mx-64'
           >
             <label className='flex flex-col'>
               <span className='text-white font-medium mb-4'>Name</span>
