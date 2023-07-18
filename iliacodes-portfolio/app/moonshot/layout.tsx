@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: 'IliaCodes',
-  description: 'IliaCodes Portfolio, Vancouver based Blockchain developer and auditor. Projects and work experience.',
+  title: 'MoonShot',
+  description: 'MoonShot is a asset tracking app that allows users to follow their favorite Stocks, Crptocurrencies and NFTs.',
 }
 
 export default function RootLayout({

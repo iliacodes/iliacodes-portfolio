@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: 'IliaCodes',
-  description: 'IliaCodes Portfolio, Vancouver based Blockchain developer and auditor. Contact email.',
+  title: 'Contact',
+  description: 'Vancouver based Blockchain developer and security researcher. Contact me through the form, telegram or linkedIn.',
 }
 
 export default function RootLayout({

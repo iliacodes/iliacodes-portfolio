@@ -3,7 +3,7 @@ import {ubuntuMono} from '../utils/fonts'
 
 export const metadata = {
   title: 'IliaCodes',
-  description: 'IliaCodes Portfolio, Vancouver based Blockchain developer and auditor.',
+  description: 'IliaCodes Portfolio, Vancouver based Full-Stack Developer, Blockchain developer and Smart-Contract Security Researcher.',
 }
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: 'IliaCodes',
-  description: 'IliaCodes Portfolio, Vancouver based Blockchain developer and auditor. Projects and work experience.',
+  title: 'FanConnect',
+  description: 'FanConnect is a subscription platform with a decentralized payment solution for creators and their fans.',
 }
 
 export default function RootLayout({

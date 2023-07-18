@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import React from 'react';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
-import Test2 from '@/components/Particles';
 
 const Contact = () => {
   return (

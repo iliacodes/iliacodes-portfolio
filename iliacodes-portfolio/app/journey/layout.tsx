@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: 'IliaCodes',
-  description: 'IliaCodes Portfolio, Journey into Blockchain Development.',
+  title: 'Journey',
+  description: 'IliaCodes Portfolio, Journey into Blockchain Development. From love at first site to a career in Web3.',
 }
 
 export default function RootLayout({

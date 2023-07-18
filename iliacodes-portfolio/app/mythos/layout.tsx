@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: 'IliaCodes',
-  description: 'IliaCodes Portfolio, Vancouver based Blockchain developer and auditor. Projects and work experience.',
+  title: 'Mythos',
+  description: 'Mythos is a browser based game built in unity. Users can battle NPCs, other users and earn rewards completing quests in the galaxies.',
 }
 
 export default function RootLayout({

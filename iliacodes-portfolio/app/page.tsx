@@ -2,14 +2,10 @@
 import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import '../styles/homePage.css';
-import { MotionConfig } from 'framer-motion';
 import { motion, AnimatePresence } from 'framer-motion';
 import Nav from '../components/nav/Nav';
-import logo from '../public/logo.png';
-import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Test2 from '../components/Particles';
 
 
 
@@ -25,9 +21,6 @@ export default function Home() {
 
   return (
     <main className="">
-      {/* <Test2
-        showAnimation={true}
-      /> */}
       <Header />
       <div className="xl:mx-64 flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] lg:mx-48">
         <motion.div className="flex items-center">
