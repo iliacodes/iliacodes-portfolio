@@ -9,18 +9,18 @@ const Footer = () => {
   return (
     <div className="items-center flex justify-center p-16 mb-24 border-t border-zinc-500">
       <div className="flex">
-      <Link href="https://t.me/iliacodes" target="_blank">
-            <div className="px-8 scale-125 ">
-              <PiTelegramLogoBold />
-            </div>
-            </Link>
+        <Link href="https://t.me/iliacodes" target="_blank">
+          <div className="px-8 scale-125 hover:text-[#9F9]">
+            <PiTelegramLogoBold />
+          </div>
+        </Link>
         <Link href="https://github.com/iliacodes" target="_blank">
-          <div className="px-8 scale-125">
+          <div className="px-8 scale-125 hover:text-[#9F9]">
             <PiGithubLogoBold />
           </div>
         </Link>
         <Link href="https://linkedin.com/in/0x-ilia" target="_blank">
-          <div className="px-8 scale-125">
+          <div className="px-8 scale-125 hover:text-[#9F9]">
             <SiLinkedin />
           </div>
         </Link>

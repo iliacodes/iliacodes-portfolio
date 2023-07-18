@@ -22,17 +22,17 @@ const Header = () => {
         <div className="items-center px-2 hidden sm:block">
           <div className="flex">
             <Link href="https://t.me/iliacodes" target="_blank">
-            <div className="px-4 scale-125 ">
-              <PiTelegramLogoBold />
-            </div>
+              <div className="px-4 scale-125 hover:text-[#9F9]">
+                <PiTelegramLogoBold />
+              </div>
             </Link>
             <Link href="https://github.com/iliacodes" target="_blank">
-              <div className="px-4 scale-125">
+              <div className="px-4 scale-125 hover:text-[#9F9] ">
                 <PiGithubLogoBold />
               </div>
             </Link>
             <Link href="https://linkedin.com/in/0x-ilia" target="_blank">
-              <div className="px-4 scale-125">
+              <div className="px-4 scale-125 hover:text-[#9F9]">
                 <SiLinkedin />
               </div>
             </Link>

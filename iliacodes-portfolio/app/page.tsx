@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="">
+    <main>
       <Header />
       <div className="xl:mx-64 flex items-center p-24 box-shadow-[#0F0] blur-[0.5px] lg:mx-48">
         <motion.div className="flex items-center">
@@ -54,7 +54,6 @@ export default function Home() {
             </motion.div>
           )}
         </AnimatePresence>
-
       </div>
     </main>
   );

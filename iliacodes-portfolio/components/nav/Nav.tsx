@@ -41,7 +41,6 @@ export default function Nav() {
             if (index < iteration) {
               return originalText[index];
             }
-
             return letters[Math.floor(Math.random() * 26)];
           })
           .join("");

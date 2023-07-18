@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import Header from '../../components/Header';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../../components/BottomNav';
 import dynamic from 'next/dynamic';
 import { PiGithubLogoBold } from 'react-icons/pi';
 import {TbWorldShare} from 'react-icons/tb';
@@ -119,7 +119,6 @@ const Mythos = () => {
         </div>
         <Footer />
       </div>
-
     </>
   );
 };

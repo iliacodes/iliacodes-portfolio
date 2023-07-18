@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import SubHeader from '../../components/SubHeader'
+import SubHeader from '../../components/BottomNav'
 import AboutInsert from '../../components/AboutInsert'
 
 const About = () => {

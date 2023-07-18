@@ -223,7 +223,6 @@ export function SubjectComponent(props: SubjectsRenderProps): JSX.Element {
 
   return (
     <div
-      // className=""
       style={{
         position: "absolute",
         width: "100vw",

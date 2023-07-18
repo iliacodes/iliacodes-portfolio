@@ -1,11 +1,9 @@
 import { useRef, useEffect, useState } from 'react';
-import { ProjectItem } from './types';
+import { ProjectItem } from './constants/types';
 import styles from './style.module.css';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import Link from 'next/link';
-
 
 interface ModalProps {
   modal: {
@@ -13,7 +11,6 @@ interface ModalProps {
     index: number;
   };
   projects: ProjectItem[];
-  closeModal: () => void;
 }
 
 const scaleAnimation = {
@@ -23,13 +20,11 @@ const scaleAnimation = {
 };
 
 
-const Modal: React.FC<ModalProps> = ({ modal, projects, closeModal }) => {
+const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
   const { active, index } = modal;
   const modalContainer = useRef<HTMLDivElement>(null);
   const cursor = useRef<HTMLDivElement>(null);
   const cursorLabel = useRef<HTMLDivElement>(null);
-  const [expanded, setExpanded] = useState(false);
-
 
   useEffect(() => {
     //Move Container

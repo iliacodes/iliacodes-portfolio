@@ -1,4 +1,4 @@
-import SubHeader from '@/components/SubHeader';
+import SubHeader from '@/components/BottomNav';
 import Header from '@/components/Header';
 import React from 'react';
 import ContactForm from '@/components/ContactForm';

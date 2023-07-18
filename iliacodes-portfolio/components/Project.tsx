@@ -10,7 +10,7 @@ const Project: React.FC<Props> = ({ index, title, description, link, setModal })
 
   const handleClick = () => {
     window.location.href = link;
-  }
+  };
 
   return (
     <div className="">

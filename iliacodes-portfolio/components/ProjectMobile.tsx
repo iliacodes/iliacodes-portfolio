@@ -19,7 +19,6 @@ const Project: React.FC<Props> = ({ index, title, link, src }) => {
         style={{ backgroundImage: `url(${src})` }}
         onClick={handleClick}
       >
-        {/* <h2 className="text-2xl font-normal transition-all duration-400">{title}</h2> */}
       </div>
     </div>
   );

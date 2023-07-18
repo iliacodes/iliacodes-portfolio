@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import experiences from '../../components/constants/experiences';
-import SubHeader from '@/components/SubHeader';
+import SubHeader from '@/components/BottomNav';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 

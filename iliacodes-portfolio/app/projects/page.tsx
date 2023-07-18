@@ -5,9 +5,8 @@ import ProjectMobile from '../../components/ProjectMobile';
 import Modal from '../../components/Modal';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../../components/BottomNav';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 
 interface ProjectItem {
   title: string;
@@ -39,7 +38,6 @@ const Projects: React.FC = () => {
         if (iteration >= originalText.length) {
           clearInterval(interval);
         }
-
         iteration += 1 / 5;
       }, 6);
     };
@@ -111,7 +109,7 @@ const Projects: React.FC = () => {
             />;
           })}
         </div>
-        <Modal modal={modalState} projects={projects} closeModal={() => setModalState({ active: false, index: 0 })} />
+        <Modal modal={modalState} projects={projects} />
       </div>
       <div className="sm:hidden">
         <div>
