@@ -5,7 +5,6 @@ import Modal from '../../components/Modal';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import SubHeader from '../../components/SubHeader';
-import Test2 from '../../components/Particles';
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 

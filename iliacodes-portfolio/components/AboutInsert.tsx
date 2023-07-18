@@ -84,7 +84,8 @@ const AboutInsert = () => {
                 />
               </motion.div>
               <div className="my-5 hidden sm:block">
-                As a driven individual with a deep passion for blockchain technology, I'm excited about realizing ideas and making a positive impact on the world. My vision is to leverage my skills to contribute to a movement that can transform the way we live and work.
+                As a driven individual with a deep passion for blockchain technology, I&apos;m
+                excited about realizing ideas and making a positive impact on the world. My vision is to leverage my skills to contribute to a movement that can transform the way we live and work.
               </div>
               <div className="sm:hidden flex flex-col">
                 <motion.p
