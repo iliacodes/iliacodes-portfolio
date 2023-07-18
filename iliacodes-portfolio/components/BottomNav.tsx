@@ -7,7 +7,7 @@ import { RiContactsLine } from 'react-icons/ri';
 
 const SubHeader = () => {
   return (
-    <div className="fixed bottom-1 lg:bottom-8 w-full overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-300 via-green-400 to-green-500 z-50 text-[black] ">
+    <div className="fixed bottom-1 lg:bottom-8 w-full overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-300 via-green-400 to-green-500 z-50 text-[black] max-w-[640px] flex justify-center items-center left-1/2 transform -translate-x-1/2 sm:rounded-full sm:opacity-95 rounded-sm">
       <div className="container mx-auto ">
         <div className="w-full h-[96px] backdrop-blur-md max-w-[480px] mx-auto flex justify-between text-2xl  items-center">
           <Link href="/about" className="hover:text-[#660066] cursor-pointer w-[60px] h-[60px] flex items-center justify-center">

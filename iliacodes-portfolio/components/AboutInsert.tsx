@@ -74,11 +74,11 @@ const AboutInsert = () => {
                   2000,
                   "blockchain developer",
                   2000,
-                  "smart-contract auditor",
+                  "smart-contract researcher",
                   2000,
                 ]}
-                  speed={40}
-                  className="text-[#4396bd] uppercase font-semibold"
+                  speed={60}
+                  className="text-[#9F9] uppercase font-semibold"
                   wrapper='span'
                   repeat={Infinity}
                 />
@@ -227,7 +227,5 @@ const AboutInsert = () => {
 
   );
 };
-
-// export default AboutInsert;
 
 export default dynamic(() => Promise.resolve(AboutInsert), { ssr: false });
