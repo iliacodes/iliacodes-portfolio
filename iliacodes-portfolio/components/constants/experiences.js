@@ -1,12 +1,15 @@
-import logo from '../../public/logo.png';
+import logo from '../../public/timelineLogo.png';
+import moralis from '../../public/moralis2.png';
+import lighthouse from '../../public/lighthouse1.png';
+import encode from '../../public/encode1.png';
 
 
 const experiences = [
   {
     title: "Education",
     company_name: "Moralis, Coursera",
-    icon: logo,
-    iconBg: "#383E56",
+    icon: moralis,
+    iconBg: "#fff",
     date: "Q2 - Q3 2022",
     points: [
       "Moralis",
@@ -18,8 +21,8 @@ const experiences = [
   {
     title: "Bootcamp",
     company_name: "Lighthouse Labs",
-    icon: logo,
-    iconBg: "#E6DEDD",
+    icon: lighthouse,
+    iconBg: "#fff",
     date: "Q4 2022, Q1 2023",
     points: [
       "Front-end Development: Lighthouse Labs taught me the fundamentals of front-end web development, including HTML, CSS, and JavaScript.",
@@ -30,8 +33,8 @@ const experiences = [
   {
     title: "Bootcamps #2 #3",
     company_name: "Encode Club",
-    icon: logo,
-    iconBg: "#383E56",
+    icon: encode,
+    iconBg: "#fff",
     date: "Q2 2023",
     points: [
       "Deep diving into Solidity, Hardhat, EthersJS, IPFS, and other related technologies.",
@@ -45,7 +48,7 @@ const experiences = [
     title: "Contract Work",
     company_name: "iliacodes",
     icon: logo,
-    iconBg: "#383E56",
+    iconBg: "#fff",
     date: "Q2 2023",
     points: [
       "Taking contracts on building the following:",
