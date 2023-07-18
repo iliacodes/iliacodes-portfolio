@@ -62,13 +62,13 @@ const FanConnect = () => {
           <div className="my-32">
             <h2 className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex items-center">
               <Link href="fan-connect" className="mr-5 border border-white p-2">
-                FanConnect /
+                FanConnect <span className="sm:block hidden">/</span>
               </Link>
-              <Link href="moonshot" className="mx-5">
-                Moonshot /
+              <Link href="moonshot" className="mx-5 p-2">
+                Moonshot <span className="sm:block hidden">/</span>
               </Link>
-              <Link href="mythos" className="mx-5">
-                Mythos /
+              <Link href="mythos" className="mx-5 p-2">
+                Mythos <span className="sm:block hidden">/</span>
               </Link>
             </h2>
             <h1 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0" data-value="Fan-Connect.">Fan-Connect.</h1>
@@ -103,19 +103,21 @@ const FanConnect = () => {
               <div className="mx-5 text-[#007acc]">
                 <SiTypescript title="Typescript" />
               </div>
-
             </h2>
             <h2 className="sm:text-[32px] text-[20px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex items-center">
               <div className="text-[24px]">
                 Links:
               </div>
-              <div className="mx-10" title="Deployed site">
-                <TbWorldShare />
-              </div>
-              <div title="Repository">
-                < PiGithubLogoBold />
-
-              </div>
+              <Link href="https://fan-connect.vercel.app/" target="_blank">
+                <div className="mx-10" title="Deployed site">
+                  <TbWorldShare />
+                </div>
+              </Link>
+              <Link href="https://github.com/encode-solidity-group/fan-connect" target="_blank">
+                <div title="Repository">
+                  < PiGithubLogoBold />
+                </div>
+              </Link>
             </h2>
           </div>
           <div className="sm:text-[22px] text-[18px] text-[#D2E2DF] uppercase tracking-wider xl:mx-64 xl:p-0 flex-col justify-center">

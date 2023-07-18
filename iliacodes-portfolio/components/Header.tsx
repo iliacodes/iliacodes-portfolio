@@ -29,7 +29,6 @@ const Header = () => {
             <Link href="https://github.com/iliacodes">
               <div className="px-4 scale-125">
                 <PiGithubLogoBold />
-
               </div>
             </Link>
             <Link href="https://linkedin.com/in/0x-ilia">

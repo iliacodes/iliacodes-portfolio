@@ -56,14 +56,14 @@ const Moonshot = () => {
           <SubHeader />
           <div className="my-32">
             <h2 className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex">
-              <Link href="fan-connect" className="mr-5">
-                FanConnect /
+              <Link href="fan-connect" className="mr-5 p-2">
+                FanConnect <span className="sm:block hidden">/</span>
               </Link>
-              <Link href="moonshot" className="mx-5 text-[#9F9]">
-                Moonshot /
+              <Link href="moonshot" className="mx-5 border border-white p-2">
+                Moonshot <span className="sm:block hidden">/</span>
               </Link>
-              <Link href="mythos" className="mx-5">
-                Mythos /
+              <Link href="mythos" className="mx-5 p-2">
+                Mythos <span className="sm:block hidden">/</span>
               </Link>
             </h2>
             <h1 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0" data-value="Moonshot.">Moonshot.</h1>
@@ -97,9 +97,11 @@ const Moonshot = () => {
               <div className="mx-10 text-[#646665]">
                 <TbWorldShare title="Site not deployed" />
               </div>
-              <div>
-                < PiGithubLogoBold title="Repository" />
-              </div>
+              <Link href="https://github.com/iliacodes/MoonShot" target="_blank">
+                <div>
+                  < PiGithubLogoBold title="Repository" />
+                </div>
+              </Link>
             </h2>
           </div>
           <div className="sm:text-[22px] text-[18px] text-[#D2E2DF] uppercase tracking-wider xl:mx-64 xl:p-0 flex-col justify-center ">
@@ -107,7 +109,7 @@ const Moonshot = () => {
               Moonshot is a platform that allows users to track real-time prices accross a variety of assets including cryptocurrencies, stocks, and NFT&apos;s.
             </h2>
             <div className="items-center justify-center mb-5 mx-5 flex sm:mx-24 md:mx-32 xl:mx-0">
-              <Image src="/general.gif" alt="LandingPage" width={1000} height={100}/>
+              <Image src="/general.gif" alt="LandingPage" width={1000} height={100} />
             </div>
             <h2 className="lowercase sm:mx-24 md:mx-32 xl:mx-0 mx-12 mb-16 font-bold text-white">
               currently:

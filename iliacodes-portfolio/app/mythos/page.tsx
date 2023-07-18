@@ -58,13 +58,13 @@ const Mythos = () => {
           <div className="my-32">
             <h2 className="sm:text-[18px] text-[16px] text-[#D2E2DF] uppercase tracking-wider p-5 xl:mx-64 xl:p-0 flex">
               <Link href="fan-connect" className="mr-5">
-                  FanConnect /
+                  FanConnect <span className="sm:block hidden">/</span>
               </Link>
               <Link href="moonshot" className="mx-5 ">
-                  Moonshot /
+                  Moonshot <span className="sm:block hidden">/</span>
               </Link>
-              <Link href="mythos" className="mx-5 text-[#9F9]">
-                  Mythos /
+              <Link href="mythos" className="mx-5 border-white p-2">
+                  Mythos <span className="sm:block hidden">/</span>
               </Link>
             </h2>
             <h1 className="text-white md:text-[60px] sm:text-[50px] text-[40px] p-5 xl:mx-64 xl:p-0" data-value="Mythos.">Mythos.</h1>
@@ -83,7 +83,7 @@ const Mythos = () => {
               <div className="text-[24px]">
                 Links:
               </div>
-              <Link href="https://playmythos.com">
+              <Link href="https://playmythos.com" target="_blank">
               <div className="mx-10" title="playmythos.com">
                 <TbWorldShare />
               </div>
