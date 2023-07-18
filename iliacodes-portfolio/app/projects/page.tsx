@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Project from '../../components/Project';
+import ProjectMobile from '../../components/ProjectMobile';
 import Modal from '../../components/Modal';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -112,11 +113,19 @@ const Projects: React.FC = () => {
         </div>
         <Modal modal={modalState} projects={projects} closeModal={() => setModalState({ active: false, index: 0 })} />
       </div>
-        <div className="sm:hidden flex text-white">
-          <h1 className="text-[#9f9]">
-            Mobile view coming soon.
-          </h1>
+      <div className="sm:hidden">
+        <div>
+          {projects.map((project, index) => {
+            return <ProjectMobile
+              key={index}
+              index={index}
+              title={project.title}
+              link={project.link}
+              src={project.src}
+            />;
+          })}
         </div>
+      </div>
       <Footer />
     </div>
   );
