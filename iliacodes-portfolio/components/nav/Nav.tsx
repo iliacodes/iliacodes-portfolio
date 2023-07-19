@@ -128,7 +128,7 @@ export default function Nav() {
             <span className="text-[#9F9]">
               0x
             </span>
-            787dc355f
+            aB7dc5250
           </h2>
         </div>
         </motion.div>
@@ -153,7 +153,7 @@ export default function Nav() {
               <span className="text-[#9F9] ">
                 0x
               </span>
-              8Y4bD2CE
+              8Y4bD2CEa
             </h3>
           </Link>
         </div>
@@ -161,7 +161,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center 50 p-2 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5">
           <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
