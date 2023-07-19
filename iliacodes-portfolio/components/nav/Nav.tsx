@@ -53,13 +53,13 @@ export default function Nav() {
       }, 10);
     };
 
-    const h1Elements = document.querySelectorAll('h1');
-    h1Elements.forEach((element) => {
+    const h3Elements = document.querySelectorAll('h3');
+    h3Elements.forEach((element) => {
       element.addEventListener('mouseover', handleMouseOver);
     });
 
     return () => {
-      h1Elements.forEach((element) => {
+      h3Elements.forEach((element) => {
         element.removeEventListener('mouseover', handleMouseOver);
       });
     };
@@ -67,7 +67,7 @@ export default function Nav() {
 
   return (
     <nav className="flex items-center justify-center">
-      <div className='mx-8 mt-10 sm:mt-20 flex flex-wrap sm:gap-5 sm:p-10 lg:mx-24 xl:mx-48 gap-5 sm:text-[18px] justify-evenly'>
+      <div className='mx-8 mt-10 sm:mt-20 flex flex-wrap sm:gap-5 sm:p-0 lg:mx-24 xl:mx-48 gap-5 sm:text-[32px] justify-evenly'>
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
@@ -85,12 +85,12 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/about">
-            <h1 data-value="about/" className="md:w-[200px] sm:w-[150px] w-[109px]">
+            <h3 data-value="about/" className="md:w-[200px] sm:w-[150px] w-[109px]">
               <span className="text-[#9F9]">
                 0x
               </span>
               9f333a11a
-            </h1>
+            </h3>
           </Link>
         </div>
         </motion.div>
@@ -111,12 +111,12 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/journey">
-            <h1 data-value="journey/" className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <h3 data-value="journey/" className="md:w-[200px] w-[109px] sm:w-[150px]">
               <span className="text-[#9F9]">
                 0x
               </span>
               8a60232aB
-            </h1>
+            </h3>
           </Link>
         </div>
         </motion.div>
@@ -149,12 +149,12 @@ export default function Nav() {
         >
         <div className="flex items-center  p-2 sm:p-10 m-5">
           <Link href="/projects">
-            <h1 data-value="projects/" className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <h3 data-value="projects/" className="md:w-[200px] w-[109px] sm:w-[150px]">
               <span className="text-[#9F9] ">
                 0x
               </span>
               8Y4bD2CE
-            </h1>
+            </h3>
           </Link>
         </div>
         </motion.div>
@@ -173,7 +173,7 @@ export default function Nav() {
         <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
-        <div className="flex items-center p-2 sm:p-10 m-5">
+        <div className="flex items-center p-2 sm:p-10 m-5 2xl:hidden">
           <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
@@ -187,16 +187,16 @@ export default function Nav() {
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
           <Link href="/contact">
-            <h1 data-value="contact/" className="md:w-[200px] w-[109px] sm:w-[150px]">
+            <h3 data-value="contact/" className="md:w-[200px] w-[109px] sm:w-[150px]">
               <span className="text-[#9F9]">
                 0x
               </span>
               oP02Fg31A
-            </h1>
+            </h3>
           </Link>
         </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("right", "", 0.1, 1)}
         >
         <div className="flex items-center p-2 sm:p-10 m-5">
@@ -207,8 +207,8 @@ export default function Nav() {
             KklI1ms1
           </h2>
         </div>
-        </motion.div>
-        <div className="flex items-center p-2 sm:p-10 m-5">
+        </motion.div> */}
+        {/* <div className="flex items-center p-2 sm:p-10 m-5">
           <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
@@ -223,8 +223,8 @@ export default function Nav() {
             </span>
             8a60232eF
           </h2>
-        </div>
-        <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
+        </div> */}
+        {/* <div className="items-center p-2 sm:p-10 m-5 hidden 2xl:block">
           <h2 className="md:w-[200px] w-[109px] sm:w-[150px]">
             <span className="text-[#9F9]">
               0x
@@ -263,7 +263,7 @@ export default function Nav() {
             </span>
             c5cb5c9a9
           </h2>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

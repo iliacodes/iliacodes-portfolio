@@ -1,11 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 export default function Nav(): JSX.Element {
-  const [isAnimating, setIsAnimating] = useState(true);
 
   useEffect(() => {
     const startAnimation = (element: HTMLElement): void => {
@@ -25,51 +24,33 @@ export default function Nav(): JSX.Element {
 
         if (iteration >= originalText.length) {
           clearInterval(interval);
-          // setTimeout(() => {
-          //   const link = element.closest('a');
-          //   if (link) {
-          //     window.location.href = link.href;
-          //   }
-          // }, 2000);
         }
       }, 10);
     };
 
-    const handleClick = (event: MouseEvent): void => {
-      if (!isAnimating) {
-        setIsAnimating(false);
-        const h2Element = (event.target as HTMLElement).closest('h2');
-        if (h2Element) {
-          setTimeout(() => {
-            startAnimation(h2Element);
-          }, 2000); 
-        }
-      }
-    };
-
     const h1Elements = document.querySelectorAll('h1');
     h1Elements.forEach((element) => {
-      element.addEventListener('click', handleClick);
+      startAnimation(element);
     });
-
-    return () => {
-      h1Elements.forEach((element) => {
-        element.removeEventListener('click', handleClick);
-      });
-    };
-  }, [isAnimating]);
+  }, []);
 
   return (
     <nav className="flex justify-center">
       <div className='mt-10 flex flex-col gap-5 text-[32px]'>
         <div className="mt-4">
           <Link href="/about">
-            <h2 data-value="0x /about/" className="flex justify-center">
+            <h2 data-value="out/" className="flex justify-center">
               <span className="text-[#9F9]">
                 0x
               </span>
-              <h1 data-value=" /about/">
-                0Df648cC52121854c
+              <h1 data-value="outb/">
+                0Df6
+              </h1>
+              <h2 className="text-[#9F9]">
+                /about/
+              </h2>
+              <h1 data-value="outb/">
+                0Df6
               </h1>
             </h2>
           </Link>
@@ -80,32 +61,50 @@ export default function Nav(): JSX.Element {
               <span className="text-[#9F9]">
                 0x
               </span>
-              <h1 data-value=" /journey/">
-                2240ad01ea43a83c0
+              <h1 data-value="ney/">
+                2240a
+              </h1>
+              <h2 className="text-[#9F9]">
+                /journey/
+              </h2>
+              <h1 data-value="ney/">
+                2240b
               </h1>
             </h2>
           </Link>
         </div>
         <div className="mt-8">
           <Link href="/projects">
-            <h2 className="flex justify-center">
+          <h2 data-value="0x /projects/" className="flex justify-center">
               <span className="text-[#9F9]">
                 0x
               </span>
-              <h1 data-value=" /projects/">
-                e9a86e433bb06a81a
+              <h1 data-value="ney">
+                2240a
+              </h1>
+              <h2 className="text-[#9F9]">
+                /projects/
+              </h2>
+              <h1 data-value="ney/">
+                2240b
               </h1>
             </h2>
           </Link>
         </div>
         <div className="mt-8 mb-4">
           <Link href="/contact">
-            <h2 data-value="0x /contact/" className="flex justify-center">
+          <h2 data-value="0x /contact/" className="flex justify-center">
               <span className="text-[#9F9]">
                 0x
               </span>
-              <h1 data-value=" /contact/">
-                b1bf881034577e6bF
+              <h1 data-value="ney/">
+                2240a
+              </h1>
+              <h2 className="text-[#9F9]">
+                /contact/
+              </h2>
+              <h1 data-value="ney/">
+                2240b
               </h1>
             </h2>
           </Link>
