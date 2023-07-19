@@ -25,12 +25,12 @@ export default function Nav(): JSX.Element {
 
         if (iteration >= originalText.length) {
           clearInterval(interval);
-          setTimeout(() => {
-            const link = element.closest('a');
-            if (link) {
-              window.location.href = link.href;
-            }
-          }, 2000);
+          // setTimeout(() => {
+          //   const link = element.closest('a');
+          //   if (link) {
+          //     window.location.href = link.href;
+          //   }
+          // }, 2000);
         }
       }, 10);
     };
@@ -40,7 +40,9 @@ export default function Nav(): JSX.Element {
         setIsAnimating(false);
         const h2Element = (event.target as HTMLElement).closest('h2');
         if (h2Element) {
-          startAnimation(h2Element);
+          setTimeout(() => {
+            startAnimation(h2Element);
+          }, 2000); 
         }
       }
     };
