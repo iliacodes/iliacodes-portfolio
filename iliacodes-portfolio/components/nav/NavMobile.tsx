@@ -38,7 +38,10 @@ export default function Nav(): JSX.Element {
     const handleClick = (event: MouseEvent): void => {
       if (!isAnimating) {
         setIsAnimating(false);
-        startAnimation(event.target as HTMLElement);
+        const h2Element = (event.target as HTMLElement).closest('h2');
+        if (h2Element) {
+          startAnimation(h2Element);
+        }
       }
     };
 

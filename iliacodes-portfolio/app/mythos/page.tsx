@@ -63,7 +63,7 @@ const Mythos = () => {
               <Link href="moonshot" className="mx-5 p-2">
                   Moonshot <span className="sm:block hidden">/</span>
               </Link>
-              <Link href="mythos" className="mx-5 border-white p-2">
+              <Link href="mythos" className="mx-5 border border-white p-2">
                   Mythos <span className="sm:block hidden">/</span>
               </Link>
             </h2>
